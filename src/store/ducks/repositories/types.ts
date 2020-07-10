@@ -2,9 +2,7 @@
  * Actions types
  */
 
-import { number } from 'yup';
-
-const enum Repositories {
+export enum RepositoriesTypes {
   FETCH_REQUEST = '@repositories/FETCH_REQUEST',
   FETCH_SUCCESS = '@repositories/FETCH_SUCCESS',
   FETCH_FAIL = '@repositories/FETCH_FAIL',

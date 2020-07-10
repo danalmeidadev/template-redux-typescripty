@@ -1,9 +1,11 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "extends": [
+    "react-app",
     "plugin:react/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
@@ -26,7 +28,8 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
-    "prettier"
+    "prettier",
+    "jsx-a11y"
   ],
   "rules": {
     "react/jsx-one-expression-per-line" : "off",
@@ -44,13 +47,9 @@
         ]
       }
     ],
+
     "import/prefer-default-export": "off",
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      {
-        "allowExpressions": true
-      }
-    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
     "import/extensions" : [
       "error",
       "ignorePackages",
