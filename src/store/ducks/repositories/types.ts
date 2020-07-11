@@ -1,28 +1,25 @@
 /**
- * Actions types
+ * Action types
  */
-
 export enum RepositoriesTypes {
-  FETCH_REQUEST = '@repositories/FETCH_REQUEST',
-  FETCH_SUCCESS = '@repositories/FETCH_SUCCESS',
-  FETCH_FAIL = '@repositories/FETCH_FAIL',
+  LOAD_REQUEST = '@repositories/LOAD_REQUEST',
+  LOAD_SUCCCES = '@repositories/LOAD_SUCCCES',
+  LOAD_FAILURE = '@repositories/LOAD_FAILURE'
 }
 
 /**
- * Data Types
+ * Data types
  */
-
 export interface Repository {
-  id: number;
-  name: string;
+  id: number
+  name: string
 }
 
 /**
- * State types
+ * State type
  */
-
 export interface RepositoriesState {
-  readonly data: Repository[];
-  readonly loading: boolean;
-  readonly error: boolean;
+  readonly data: Repository[]
+  readonly loading: boolean
+  readonly error: boolean
 }

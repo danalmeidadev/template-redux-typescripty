@@ -1,7 +1,8 @@
 import { action } from 'typesafe-actions';
-import { Repository, RepositoriesTypes } from './types';
+import { RepositoriesTypes, Repository } from './types';
 
-export const fetchRequest = () => action(RepositoriesTypes.FETCH_REQUEST);
-export const successRequest = (data: Repository[]) =>
-  action(RepositoriesTypes.FETCH_SUCCESS, data);
-export const failRequest = () => action(RepositoriesTypes.FETCH_FAIL);
+export const loadRequest = () => action(RepositoriesTypes.LOAD_REQUEST);
+
+export const loadSuccess = (data: Repository[]) => action(RepositoriesTypes.LOAD_SUCCCES, { data });
+
+export const loadFailure = () => action(RepositoriesTypes.LOAD_FAILURE);
